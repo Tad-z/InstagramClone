@@ -297,8 +297,8 @@ nav {
 
 @media screen and (max-width: 450px) {
   .profile-photo {
-    width: 5em;
-    height: 5em;
+    width: 6em;
+    height: 6em;
     margin-top: 1em;
     margin-right: 2em;
     float: left;
@@ -407,7 +407,7 @@ nav {
     height: 1.6em;
   }
   .add-photo-button {
-    transform: scale(1.4);
+    transform: scale(1.7);
     position: fixed;
     bottom: 1em;
     right: 3em;
@@ -415,24 +415,24 @@ nav {
   }
   .add-photo-button-dark {
     color: white;
-    transform: scale(1.4);
+    transform: scale(1.7);
     position: fixed;
     bottom: 1em;
     right: 3em;
     cursor: pointer;
   }
   .change-color-button {
-    transform: scale(1.5);
+    transform: scale(1.7);
     position: fixed;
-    bottom: 2em;
+    bottom: 2.5em;
     right: 3em;
     cursor: pointer;
   }
   .change-color-button-dark {
     color: white;
-    transform: scale(1.5);
+    transform: scale(1.7);
     position: fixed;
-    bottom: 2em;
+    bottom: 2.5em;
     right: 3em;
     cursor: pointer;
   }
