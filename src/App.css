@@ -4,11 +4,12 @@ body {
 }
 .main {
   background-color: #fafafa;
+  overflow-x: hidden;
   margin: 0;
 }
 
 .main-dark {
-  height: 100%;
+  height: 100vh;
   background-color: black;
   margin: 0;
   padding: 0;
@@ -32,18 +33,28 @@ nav {
   line-height: 3.3em;
   width: 100%;
   border-bottom: 0.1em solid #dbdbdb;
-  grid-template-columns: 2fr 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .logo {
   text-decoration: none;
 }
-
-.logo > img {
-  vertical-align: middle;
+.logo-dark {
+  text-decoration: none;
 }
 
-.search {
+.logo > img {
+  vertical-align: baseline;
+  justify-items: start;
+}
+.logo-dark > img {
+  vertical-align: baseline;
+  justify-items: start;
+  width: 9.2em;
+  height: 3.8em;
+}
+
+/* .search {
   background: #fafafa;
   height: 2em;
   margin: 0.8em;
@@ -55,16 +66,17 @@ nav {
 .search::placeholder {
   text-align: center;
   color: #808080;
-}
+} */
 
 .nav-links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: end;
 }
 
-.nav-links i {
-  transform: scale(1.6);
-  color: #252525;
+.nav-links p {
+  transform: scale(1.2);
+  justify-content: end;
 }
 
 .container {
@@ -107,15 +119,6 @@ nav {
   margin-top: 0.5em;
 }
 
-@media screen and (max-width: 600px) {
-  .profile-photo {
-    width: 5em;
-    height: 5em;
-    margin-top: 3em;
-    margin-right: 2em;
-  }
-}
-
 .profile-photo img {
   width: 100%;
   height: 100%;
@@ -149,17 +152,17 @@ nav {
 }
 
 .profile-info button {
-  background-color: #0095f6;
+  background-color: rgb(44, 44, 48);
   color: #fff;
   font-size: 1.1em;
-  width: 6em;
+  width: 10em;
   height: 2em;
 }
 .profile-info-dark button {
-  background-color: #0095f6;
+  background-color:rgb(44, 44, 48);
   color: #fff;
   font-size: 1.1em;
-  width: 6em;
+  width: 10em;
   height: 2em;
 }
 
@@ -243,15 +246,15 @@ nav {
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 1px;
-  column-gap: 1px;
+  row-gap: 2em;
+  column-gap: 2em;
 }
 .gallery-dark {
   background-color: #000;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 1px;
-  column-gap: 1px;
+  row-gap: 2em;
+  column-gap: 2em;
 }
 
 .item {
@@ -290,4 +293,166 @@ nav {
 
 .item:hover .delete-button {
   opacity: 1;
+}
+
+@media screen and (max-width: 450px) {
+  .profile-photo {
+    width: 5em;
+    height: 5em;
+    margin-top: 1em;
+    margin-right: 2em;
+    float: left;
+    
+  }
+  .item {
+    height: 7.3em;
+    width: 6.9em;
+    background: #000;
+    cursor: pointer;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    row-gap: 0.1em;
+    justify-content: center;
+    justify-items: center;
+    /* margin-right: 0.5em; */
+    column-gap: 0.1em;
+  }
+  .gallery-dark {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    row-gap: 0.1em;
+    justify-content: center;
+    justify-items: center;
+    /* margin-right: 0.5em; */
+    column-gap: 0.1em;
+  }
+  .delete-button {
+    opacity: 0;
+    position: absolute;
+    margin-left: -5.5em;
+    margin-top: 3.5em;
+    padding: 0.1em 0.3em;
+    background-color: #890000;
+    color: #fff;
+    border: 1px solid #c8c8c8;
+    transform: scale(1);
+  }
+  .delete-button-dark {
+    opacity: 0;
+    position: absolute;
+    margin-left: -5.5em;
+    margin-top: 3.5em;
+    padding: 0.1em 0.3em;
+    background-color: #890000;
+    color: #fff;
+    border: 1px solid #c8c8c8;
+    transform: scale(1);
+  }
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3em 0 2em 0;
+    border-bottom: 0.2px solid #dbdbdb;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .bio-dark {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3em 0 2em 0;
+    border-bottom: 0.2px solid #dbdbdb;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .profile-info .name {
+    font-size: 1em;
+    color: #545454;
+    margin-bottom: 0;
+  }
+  .profile-info-dark .name {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 0;
+  }
+  .profile-info .about {
+    font-size: 0.8em;
+    color:  #545454;
+    margin-bottom: 1em;
+  }
+  .profile-info-dark .about {
+    font-size: 0.8em;
+    color:  white;
+    margin-bottom: 1em;
+  }
+  .profile-info button {
+    background-color: rgb(44, 44, 48);
+    color: #fff;
+    font-size: 16px;
+    width: 8em;
+    height: 1.6em;
+  }
+  .profile-info-dark button {
+    background-color: rgb(44, 44, 48);
+    color: #fff;
+    font-size: 16px;
+    width: 8em;
+    height: 1.6em;
+  }
+  .add-photo-button {
+    transform: scale(1.2);
+    position: fixed;
+    bottom: 1em;
+    right: 3em;
+    cursor: pointer;
+  }
+  .add-photo-button-dark {
+    color: white;
+    transform: scale(1.2);
+    position: fixed;
+    bottom: 1em;
+    right: 3em;
+    cursor: pointer;
+  }
+  .change-color-button {
+    transform: scale(1.2);
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    cursor: pointer;
+  }
+  .change-color-button-dark {
+    color: white;
+    transform: scale(1.2);
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    cursor: pointer;
+  }
+  .icon {
+    font-size: 15px;
+  }
+  .edit-bio-form input {
+    width: 100%;
+    height: 1em;
+    border: 0.1em solid #dbdbdb;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+  }
+  /* .search {
+    background: #fafafa;
+    height: 2em;
+    margin: 0.8em;
+    width: 5em;
+    border: 0.07em solid #dbdbdb;
+    border-radius: 0.2em;
+  } */
 }

@@ -63,7 +63,7 @@ useEffect(() => {
     </form>
   );
   const editButton = (
-    <button onClick={() => setEditFormIsOpen(true)}>Edit</button>
+    <button onClick={() => setEditFormIsOpen(true)}>Edit profile</button>
   );
   
   return (
