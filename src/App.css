@@ -407,7 +407,7 @@ nav {
     height: 1.6em;
   }
   .add-photo-button {
-    transform: scale(1.2);
+    transform: scale(1.4);
     position: fixed;
     bottom: 1em;
     right: 3em;
@@ -415,14 +415,14 @@ nav {
   }
   .add-photo-button-dark {
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.4);
     position: fixed;
     bottom: 1em;
     right: 3em;
     cursor: pointer;
   }
   .change-color-button {
-    transform: scale(1.2);
+    transform: scale(1.4);
     position: fixed;
     bottom: 2em;
     right: 3em;
@@ -430,7 +430,7 @@ nav {
   }
   .change-color-button-dark {
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.4);
     position: fixed;
     bottom: 2em;
     right: 3em;
