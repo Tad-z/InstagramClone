@@ -41,15 +41,20 @@ nav {
 }
 .logo-dark {
   text-decoration: none;
+  margin: 1rem;
+  margin-left: 3rem;
 }
 
 .logo > img {
   padding: auto;
+  width: 9.2em;
+  height: 9em;
 }
 .logo-dark > img {
  padding: auto;
-  width: 9.2em;
-  height: 3.8em;
+ color: white;
+ width: 9.2em;
+ height: 9em;
 }
 
 /* .search {
