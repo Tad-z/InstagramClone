@@ -17,39 +17,37 @@ body {
 
 button {
   cursor: pointer;
-  padding: unset;
-  border: unset;
-  background: unset;
-  transition: all 0.2s ease-in-out;
-  border-radius: 5px;
+  background: none;
+  border: none;
+  border-radius: 10px;
 }
 
 nav {
   position: fixed;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   background-color: #fff;
   height: 3.3em;
-  line-height: 3.3em;
   width: 100%;
   border-bottom: 0.1em solid #dbdbdb;
-  grid-template-columns: 1fr 1fr;
 }
 
 .logo {
   text-decoration: none;
+  margin: 1rem;
+  margin-left: 3rem;
 }
 .logo-dark {
   text-decoration: none;
 }
 
 .logo > img {
-  vertical-align: baseline;
-  justify-items: start;
+  padding: auto;
 }
 .logo-dark > img {
-  vertical-align: baseline;
-  justify-items: start;
+ padding: auto;
   width: 9.2em;
   height: 3.8em;
 }
@@ -69,14 +67,8 @@ nav {
 } */
 
 .nav-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-content: end;
-}
-
-.nav-links p {
-  transform: scale(1.2);
-  justify-content: end;
+  display: flex;
+  justify-content: space-around;
 }
 
 .container {
@@ -177,7 +169,6 @@ nav {
   width: 50%;
   height: 2em;
   border: 0.1em solid #dbdbdb;
-  border-radius: 0.2em;
   padding: 0.5em;
   margin-top: 0.5em;
 }
@@ -188,6 +179,7 @@ nav {
 
 .edit-bio-form .cancel-button {
   background-color: #890000;
+  
 }
 
 #addPhotoInput {
@@ -233,6 +225,10 @@ nav {
 
 .icon {
   font-size: 20px;
+  margin-left: 5rem;
+}
+.icon:last-child {
+  margin-right: 3rem;
 }
 .loader {
   width: 100%;
