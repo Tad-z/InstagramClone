@@ -227,6 +227,11 @@ nav {
 }
 .dark-icon {
   color: #fff;
+  font-size: 20px;
+  margin-left: 5rem;
+}
+.dark-icon:last-child {
+  margin-right: 3rem;
 }
 
 .icon {
