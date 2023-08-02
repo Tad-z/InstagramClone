@@ -302,11 +302,21 @@ nav {
     font-size: 20px;
     margin-left: 1rem;
   }
+  .dark-icon {
+    font-size: 20px;
+    margin-left: 1rem;
+  }
   .icon:last-child {
     margin-right: 0.5rem;
   }
+  .dark-icon:last-child {
+    margin-right: 0.5rem;
+  }
   .logo {
-    margin: 0.2rem;
+    margin: 0.5rem;
+  }
+  .logo-dark {
+    margin: 0.5rem;
   }
   /* .logo > img {
     margin: 0.2rem;
